@@ -1,0 +1,107 @@
+version: 1
+
+################################################################################
+# Project / book metadata
+################################################################################
+
+project:
+  title: "Discrepancy functions and using them in calibration"
+
+  authors:
+    - name: Sunil Jaiswal and Dick Furnstahl
+
+  copyright: "2026"
+  
+  numbering:
+    equation:
+      continue: true
+    figure:
+      continue: true
+    table:
+      continue: true
+
+  ##############################################################################
+  # Table of contents
+  ##############################################################################
+
+  toc:
+    - file: content/introduction.md
+    - file: content/MD-and-priors.md 
+    - file: content/ball-drop-model.md
+    - file: content/demo-ball-drop-experiment.ipynb
+
+  ##############################################################################
+  # Bibliography 
+  ##############################################################################
+
+  # bibliography:
+  #   - references.bib
+
+  ##############################################################################
+  # LaTeX / math macros
+  ##############################################################################
+
+  math:
+     '\thetahat': '\widehat{\theta}'
+     '\pars': '\boldsymbol{\theta}'
+
+     '\yexp': 'y_{\mathrm{exp}}'
+     '\ymodel': 'y_{\mathrm{model}}'
+     '\yth': 'y_{\mathrm{th}}'
+
+     '\deltam': '\delta_m'
+     '\deltamt': '\delta_m(t)'
+
+     '\xvec': '\boldsymbol{x}'
+     '\yvec': '\boldsymbol{y}'
+     '\muvec': '\boldsymbol{\mu}'
+     '\Sigmavec': '\boldsymbol{\Sigma}'
+
+     '\Lra': '\Longrightarrow'
+
+
+################################################################################
+# Website settings 
+################################################################################
+
+site:
+  template: book-theme
+
+  title: "Discrepancy functions and using them in calibration"
+
+  options:
+  
+    style: ./custom.css
+
+    # logo: content/images/isnet12_logo.png
+    logo: content/images/BAND_logo.png
+
+    # Keep normal book navigation
+    hide_toc: false
+    hide_outline: false
+    hide_footer_links: false
+
+    # We don't need author metadata repeated at the top of every page
+    hide_authors: true
+
+  ##############################################################################
+  # Header action buttons
+  ##############################################################################
+
+  actions:
+
+    # Enable this after the repository exists
+    # - title: GitHub
+    #   url: https://github.com/sjaiswal-tifr/ISNET12-model-discrepancy
+
+    # Enable this once ball-drop.ipynb is on GitHub
+    - title: Run in Colab
+      url: https://colab.research.google.com/github/sjaiswal-tifr/ISNET12-model-discrepancy/blob/main/content/ball-drop.ipynb
+
+  ##############################################################################
+  # Custom footer / sidebar footer
+  ##############################################################################
+
+  parts:
+    primary_sidebar_footer: content/sidebar-footer.md
+    footer: content/footer.md

@@ -52,14 +52,13 @@ Thus, choosing a kernel is the functional analogue of choosing a prior for an
 ordinary model parameter: it provides a way to incorporate our prior physical
 knowledge about the model uncertainty.
 
+## Example kernel
+
 As a simple example, suppose that we have prior knowledge that the theoretical
 model provides a good description of the system at small $x$, but is expected 
 to deviate increasingly from the true system response as $x$ grows. We would 
 then want the functional prior for $\delta(x)$ to favor functions whose typical 
 magnitude is small at small $x$ and larger at large $x$.
-
-
-## Example kernel
 
 A kernel that can generate such functional prior has the form
 

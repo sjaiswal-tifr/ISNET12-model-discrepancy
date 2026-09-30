@@ -97,7 +97,7 @@ site:
 
     # Enable this once ball-drop.ipynb is on GitHub
     - title: Run in Colab
-      url: https://colab.research.google.com/github/sjaiswal-tifr/ISNET12-model-discrepancy/blob/main/content/demo-ball-drop-experiment.ipynb
+      url: https://colab.research.google.com/github/sjaiswal-tifr/ISNET12-model-discrepancy/blob/main/content/demo-ball-drop-experiment_v2.ipynb
 
   ##############################################################################
   # Custom footer / sidebar footer

@@ -28,7 +28,7 @@ project:
     - file: content/introduction.md
     - file: content/MD-and-priors.md 
     - file: content/ball-drop-model.md
-    - file: content/demo-ball-drop-experiment.ipynb
+    - file: content/demo-ball-drop-experiment_v2.ipynb
     - file: content/real-world-application-of-discrepancy-model.md
 
   ##############################################################################
